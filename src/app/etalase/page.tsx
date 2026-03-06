@@ -7,7 +7,7 @@ export default function EtalasePage() {
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold mb-10 text-center">
           {/* etalase */}
-          Produk CCTV-ALLDAY
+          Produk <span className="text-blue-400">CCTV-ALLDAY</span>
         </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">

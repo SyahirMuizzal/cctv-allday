@@ -1,10 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ShieldCheck, Camera, PhoneCall } from "lucide-react";
 
 export default function CCTVHeroSection() {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 text-white overflow-hidden flex items-center">
-      <div className="max-w-5xl mx-auto px-6 py-24 text-center">
+      <div className="max-w-6xl mx-auto px-6 py-24 text-center">
         {/* BADGE */}
         <span className="inline-block bg-blue-500/20 text-blue-400 px-4 py-1 rounded-full text-sm mb-6">
           CCTV-AllDay Distributor & Instalasi CCTV Profesional
@@ -40,10 +41,10 @@ export default function CCTVHeroSection() {
           </div>
         </div>
 
-        {/* CTA BUTTON */}
+        {/* CTA */}
         <div className="flex flex-wrap justify-center gap-4 mb-16">
           <Link
-            href="https://wa.me/6281234567890"
+            href="https://wa.me/6289603161196"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-500 hover:bg-blue-600 transition px-8 py-4 rounded-xl font-semibold shadow-lg"
@@ -57,6 +58,20 @@ export default function CCTVHeroSection() {
           >
             Lihat Paket
           </Link>
+        </div>
+
+        {/* IMAGE BELOW HERO */}
+        <div className="relative mx-auto max-w-4xl">
+          <div className="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full"></div>
+
+          <Image
+            src="/CCTV-ALLDAY-IMAGES/Logo-CCTVALLDAY-1.jpeg"
+            alt="CCTV-AllDay"
+            width={1000}
+            height={600}
+            priority
+            className="relative rounded-2xl shadow-2xl w-full h-auto object-cover"
+          />
         </div>
       </div>
     </section>

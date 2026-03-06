@@ -16,14 +16,14 @@ export default function Navbar() {
           <div className="relative w-10 h-10">
             <Image
               src="/CCTV-ALLDAY-IMAGES/logo-cctvallday.jpeg"
-              alt="Logo CCTV AllDay"
+              alt="Logo CCTV All-Day"
               fill
               className="object-cover rounded-full"
             />
           </div>
 
           <span className="text-lg font-bold text-white tracking-wide">
-            CCTV<span className="text-blue-400">ALL-DAY</span>
+            CCTV-<span className="text-blue-400">ALLDAY</span>
           </span>
         </Link>
 

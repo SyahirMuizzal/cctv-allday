@@ -11,7 +11,7 @@ export default function Footer() {
         {/* BRAND */}
         <div>
           <h3 className="text-white text-xl font-bold mb-4">
-            CCTV<span className="text-blue-400">AllDay</span>
+            CCTV-<span className="text-blue-400">ALLDAY</span>
           </h3>
           <p className="text-sm leading-relaxed">
             Solusi keamanan terpercaya untuk rumah, kantor, dan bisnis Anda.
@@ -30,6 +30,11 @@ export default function Footer() {
             <li>
               <Link href="/etalase" className="hover:text-blue-400 transition">
                 Produk
+              </Link>
+            </li>
+            <li>
+              <Link href="/" className="hover:text-blue-400 transition">
+                Tentang
               </Link>
             </li>
           </ul>

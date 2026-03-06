@@ -5,20 +5,6 @@ export default function CCTVAboutSection() {
   return (
     <section className="bg-slate-900 text-white py-20 lg:py-28">
       <div className="max-w-6xl mx-auto px-6">
-        {/* IMAGE */}
-        <div className="flex justify-center mb-14">
-          <div className="relative w-full max-w-3xl">
-            <Image
-              src="/CCTV-ALLDAY-IMAGES/BANER-CCTVALLDAY.jpeg"
-              alt="Kamera CCTV CCTV-AllDay"
-              width={900}
-              height={600}
-              priority
-              className="w-full h-auto object-contain rounded-2xl shadow-2xl"
-            />
-          </div>
-        </div>
-
         {/* CONTENT */}
         <div className="text-center max-w-3xl mx-auto">
           <span className="text-blue-400 font-semibold text-sm tracking-wider uppercase">
@@ -27,12 +13,12 @@ export default function CCTVAboutSection() {
 
           <h2 className="text-3xl lg:text-4xl font-bold mt-4 leading-tight">
             Solusi Keamanan CCTV Profesional
-            <span className="block text-blue-400">Dipercaya Sejak 2015</span>
+            <span className="block text-blue-400">Dipercaya Sejak 2020</span>
           </h2>
 
           <p className="text-slate-400 mt-6 leading-relaxed">
             CCTV-AllDay adalah perusahaan spesialis instalasi dan distribusi
-            sistem keamanan CCTV dengan pengalaman lebih dari 10 tahun. Kami
+            sistem keamanan CCTV dengan pengalaman lebih dari 6 tahun. Kami
             telah dipercaya oleh ratusan klien mulai dari rumah pribadi, toko,
             kantor hingga area industri.
           </p>
@@ -104,6 +90,23 @@ export default function CCTVAboutSection() {
                 Tanpa biaya tersembunyi dan konsultasi gratis.
               </p>
             </div>
+          </div>
+        </div>
+
+        {/* IMAGE (NOW AT BOTTOM) */}
+        <div className="flex justify-center mt-20">
+          <div className="relative w-full max-w-5xl">
+            {/* Glow effect */}
+            <div className="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full"></div>
+
+            <Image
+              src="/CCTV-ALLDAY-IMAGES/BANER-CCTVALLDAY.jpeg"
+              alt="Kamera CCTV CCTV-AllDay"
+              width={1400}
+              height={800}
+              priority
+              className="relative w-full h-auto object-cover rounded-2xl shadow-2xl"
+            />
           </div>
         </div>
       </div>
