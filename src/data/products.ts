@@ -2,7 +2,7 @@ export interface Product {
   id: number;
   slug: string;
   name: string;
-  price: number;
+  price: number | string;
   image: string;
   category: string;
   badge?: string;
@@ -31,7 +31,7 @@ export const products: Product[] = [
     id: 3,
     slug: "paket-cctv-4-channel",
     name: "Paket 2 Chanel",
-    price: "xxxx",
+    price: 0,
     image: "/products/Paket-2-Chanel.jpg",
     category: "Paket",
   },
@@ -39,7 +39,7 @@ export const products: Product[] = [
     id: 4,
     slug: "paket-cctv-8-channel",
     name: "Paket 4 Chanel",
-    price: "xxxx",
+    price: 0,
     image: "/products/Paket-4-Chanel.jpg",
     category: "Paket",
     badge: "Hot",
@@ -48,7 +48,7 @@ export const products: Product[] = [
     id: 5,
     slug: "kamera-ip-wireless",
     name: "Paket 8 Chanel",
-    price: "xxxx",
+    price: 0,
     image: "/products/Paket-8-Chanel.jpg",
     category: "Paket",
   },

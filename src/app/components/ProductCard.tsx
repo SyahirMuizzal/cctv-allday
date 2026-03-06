@@ -3,10 +3,12 @@ import Link from "next/link";
 
 interface ProductProps {
   id: number | string;
+  slug: string;
   name: string;
-  price: string;
+  price: number | string;
   image?: string | null;
   category: string;
+  badge?: string;
 }
 
 export default function ProductCard({
@@ -49,7 +51,9 @@ export default function ProductCard({
           </h3>
         </Link>
 
-        <p className="text-blue-400 text-xl font-bold mt-3">Rp. {price}</p>
+        <p className="text-blue-400 text-xl font-bold mt-3">
+          {price === 0 ? "Hubungi Kami" : `Rp ${price.toLocaleString()}`}
+        </p>
 
         {/* BUTTON BAWAH */}
         <Link
