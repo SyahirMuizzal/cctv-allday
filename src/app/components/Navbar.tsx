@@ -15,8 +15,8 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3">
           <div className="relative w-10 h-10">
             <Image
-              src="/CCTV-ALLDAY-IMAGES/logo-cctvallday.jpeg"
-              alt="Logo CCTV All-Day"
+              src="/CCTV-ALLDAY-IMAGES/Logo-CCTVALLDAY.jpeg"
+              alt="Logo CCTV-AllDay"
               fill
               className="object-cover rounded-full"
             />
