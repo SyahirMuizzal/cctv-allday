@@ -13,14 +13,22 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative w-10 h-10">
+          <div className="relative w-30 h-20">
+            <Image
+              src="/CCTV-ALLDAY-IMAGES/Logo-CCTVALLDAY.jpeg"
+              alt="Logo CCTV-AllDay"
+              fill
+              className="object-contain"
+            />
+          </div>
+          {/* <div className="relative w-10 h-10">
             <Image
               src="/CCTV-ALLDAY-IMAGES/Logo-CCTVALLDAY.jpeg"
               alt="Logo CCTV-AllDay"
               fill
               className="object-cover rounded-full"
             />
-          </div>
+          </div> */}
 
           <span className="text-lg font-bold text-white tracking-wide">
             CCTV-<span className="text-blue-400">ALLDAY</span>
